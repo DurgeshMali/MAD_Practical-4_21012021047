@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, loginActivity::class.java)
             startActivity(intent)
         }
+
+        var signUp_button = findViewById<View>(R.id.button2)
+        signUp_button.setOnClickListener {
+            intent = Intent(this, registerActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
